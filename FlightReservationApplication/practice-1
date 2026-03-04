@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+
+    stages{
+        stage('Code-pull'){
+            steps{
+                git branch: 'main', url: 'https://github.com/damorsem2017-scorpi/flight-reservation-app.git'
+            }
+        }
+    }
+}        
